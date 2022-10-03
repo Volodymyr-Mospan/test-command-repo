@@ -1,0 +1,10 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.logo {
+  display: block;
+}
+
+.logo__icon {
+  width: 67px;
+  height: 55px;
+  fill: #be3333;
+}/*# sourceMappingURL=index.css.map */
