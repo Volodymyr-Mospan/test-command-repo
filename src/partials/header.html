@@ -1,7 +1,51 @@
-<header>
-  <a class="logo" href="#">
-    <svg class="logo__icon" >
-      <use href="./images/icon.svg#icon-logo"></use>
-    </svg>
-  </a>
+<header class="header">
+  <div class="container">
+    <a class="logo" href="#">
+      <svg class="logo__icon" width="69" height="56">
+        <use href="./images/icon.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <button class="menu-toggle js-open-menu" type="button">
+      <svg width="40" height="40">
+        <use href="./images/icon.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-crosse"></use>
+        </svg>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--current" href="#">About</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Services and prices</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Barbers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="communication">
+        <a class="communication__tel" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="btn btn--menu" type="button">Online-booking</button>
+      </div>
+
+      <div class="media">
+        <ul class="media__list">
+          <li class="media__item">
+            <a class="media__link" href="#">Instagram</a>
+          </li>
+          <li class="media__item">
+            <a class="media__link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>

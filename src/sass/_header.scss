@@ -1,10 +1,144 @@
-.logo {
-  display: block;
+.header {
+  position: relative;
+  background-color: rgba(25, 28, 38, 0.2);
 }
 
 .logo__icon {
-  width: 67px;
-  height: 55px;
+  fill: #ffffff;
+}
 
-  fill: #000000;
+.menu-toggle {
+  position: absolute;
+
+  top: 48px;
+  right: 31px;
+
+  background-color: transparent;
+  border: none;
+
+  &.js-open-menu {
+    fill: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 118px;
+    padding-left: 40px;
+    width: 337px;
+
+    background-color: #fff;
+
+    transform: translateX(100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 64px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: #ff6c00;
+  }
+
+  &__link--current {
+    color: #ff6c00;
+  }
+}
+.communication {
+  &__tel {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+  }
+
+  &__tel:hover,
+  &__tel:focus {
+    color: #ff6c00;
+  }
+}
+
+.btn--menu {
+  @media screen and (max-width: 767px) {
+    padding: 11px 36px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+  }
+}
+
+.media {
+  display: flex;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+
+    margin-top: 9px;
+    margin-right: 40px;
+
+    background-color: #303030;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #303030;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: #ff6c00;
+  }
 }
